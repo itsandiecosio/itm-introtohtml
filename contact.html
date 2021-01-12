@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+  <html margin="0">
+    <head>
+      <meta name="page_type" content="np-template-header-footer-from-plugin">
+      <link rel="shortcut icon" type="image/jpg" href="footer-logo.svg"/>
+      <title>Contact</title>
+        <style>
+          .navbar {
+            display: flex;
+            flex-direction: row;
+            margin: 0px;
+            padding: 30px;
+            justify-content: space-between;
+            align-items: center;
+            background: #FCFAF8;
+          }
+          .navbar-logo {
+            width: 8%;
+            height: 8%;
+            border: none;
+            background: #FCFAF8;
+          }
+          .navbar-links {
+            display: flex;
+            flex-direction: row;
+            float: right;
+            gap: 20px;
+          }
+          .navbar-shopnow {
+            background: #FF9548;
+            border-radius: 50px;
+            border: none;
+            padding: 5px 20px;
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 26px;
+            color: #FCFAF8;
+          }
+          h1 {
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 24px;
+            color: #FF9548;
+            text-decoration: none;
+          }
+          .landing {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+          }
+          .landing-line {
+            margin-top: 25px;
+            float: left;
+          }
+          .landing-dots {
+            margin-top: 120px;
+            float: right;
+          }
+          .landing-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: #FCFAF8;
+            padding-top: 10px;
+            padding-bottom: 100px;
+          }
+          .landing-logo {
+            width: 75%;
+            height: 75%;
+            margin: auto;
+            padding: 15px;
+          }
+          .header-thin {
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #FF9548;
+          }
+          .header-thick {
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #FF9548;
+          }
+          .landing-subtitle {
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #5B5149;
+          }
+          .landing-about {
+            margin: auto;
+            background: #FCFAF8;
+          }
+          .about-box {
+            background: #FCFAF8;
+            border: 1px solid #FF9548;
+            box-sizing: border-box;
+            border-radius: 40px;
+            padding: 50px 50px 50px 50px;
+            margin: 0px 150px 75px 150px;
+            gap: 15px;
+          }
+          .about-content {
+            margin: 25px;
+          }
+          .header-thin2 {
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 45px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #FF9548;
+          }
+          .header-thick2 {
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 30px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #FF9548;
+          }
+          .about-text {
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.05em;
+            color: #5B5149;
+          }
+
+          /* Contact Page */
+          .contact-page {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 50px;
+          }
+
+          .order-btn {
+          background: #FF9548;
+          border: 1px solid #FF9548;
+          box-sizing: border-box;
+          border-radius: 30px;
+          padding: 75px;
+          font-family: HK Grotesk;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 39px;
+          letter-spacing: 0.05em;
+          color: #FCFAF8;
+          width: 350px;
+          }
+
+          .contact-btn {
+          background: #FCFAF8;
+          border: 1px solid #FF9548;
+          box-sizing: border-box;
+          border-radius: 30px;
+          border: 1px solid #FF9548;
+          padding: 75px;
+          font-family: HK Grotesk;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: 0.05em;
+          color: #FF9548;
+          width: 350px;
+          }
+
+          p {
+          font-family: HK Grotesk;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: 0.05em;
+          color: #5B5149;
+          text-align: left;
+          }
+
+          .footer {
+            display: flex;
+            flex-direction: column;
+            background: #FCFAF8;
+            margin-bottom: 50px;
+          }
+          .hr {
+            display: block;
+            border: 1px solid #FF9548;
+            height: 1px;
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            color: #FF9548;
+          }
+          .footer-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin: 25px;
+          }
+          .footer-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+          }
+          .footer-title {
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #FF9548;
+          }
+          .footer-divider {
+            border: 1px solid #FF9548;
+            width: 50px;
+            float: left;
+          }
+          .footer-content {
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 26px;
+            color: #5B5149;
+          }
+          .footer-end {
+            display: flex;
+            flex-direction: row;
+            margin-left: 175px;
+            margin-right: 175px;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .footer-left {
+            display: flex;
+            flex-direction: row;
+            gap: 15px;
+            align-items: center;
+          }
+          .footer-name {
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 18px;
+            color: #FF9548;
+          }
+          .footer-copyright {
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: right;
+            color: #5B5149;
+          }
+          .btn-area {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin: 30px;
+            gap: 15px;
+          }
+          .shop-btn {
+            padding: 8px 20px 8px 20px;
+            background: #FF9548;
+            border: 1px solid #FF9548;
+            border-radius: 30px;
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #FCFAF8;
+          }
+          .about-btn {
+            padding: 8px 20px 8px 20px;
+            background: #FCFAF8;
+            border: 1px solid #FF9548;
+            border-radius: 30px;
+            font-family: HK Grotesk;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            color: #FF9548;
+          }
+      </style>
+    </head>
+    <body bgcolor=#FCFAF8>
+      <div class="navbar">
+        <a href="index.html">
+            <button class="navbar-logo">
+                <img src="navbar-logo.svg">
+            </button>
+        </a>
+        <div class="navbar-links">
+          <a href="products.html">
+            <button class="navbar-shopnow">shop now</button>
+          </a>
+          <a href="aboutus.html">
+            <h1>about</h1>
+          </a>
+          <a href="contact.html">
+            <h1>contact</h1>
+          </a>
+        </div>
+      </div>
+
+      <div class="landing">
+        <img class="landing-line" src="landing-line.svg">
+        <div class="landing-content">
+          <img class="landing-logo" src="landing-logo.svg">
+          <span class="header-thin">WELCOME TO THE <b class="header-thick">DIGITAL ESPRESSO</b>!</span>
+          <span class="landing-subtitle">Your virtual coffee shop express.</span>
+          <div class="btn-area">
+            <a href="products.html">
+              <button class="shop-btn">SHOP PRODUCTS</button>
+            </a>
+            <a href="aboutus.html">
+              <button class="about-btn">MORE ON DIGIEX</button>
+            </a>
+          </div>
+        </div>
+        <img class="landing-dots" src="landing-dots.svg">
+      </div>
+      
+      <div class="contact-page">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlf8DaQo2y7CyxMtKknOe27t5lj6Rsjh-HAcQ9Y2se5rYmzQ/viewform?usp=sf_link">
+          <button class="order-btn">
+            <img src="order-icon.svg" width=50%><br>
+            I WANT TO ORDER.</button>
+        </a>
+        <a href="#">
+          <button class="contact-btn">
+            <img src="contact-icon.svg" width=45% padding="25px"><br>
+            I WANT TO CONTACT DIGIEX.
+            <p>Phone: 
+              + 639560111212 
+              <br>
+              Email: 
+              contact@digiex.com
+            </p>
+          </button>
+        </a>
+      </div>
+
+      <div class="footer">
+        <hr class="hr">
+        <div class="footer-links">
+          <div class="footer-link">
+            <span class="footer-title">Home</span>
+            <hr class="footer-divider">
+          </div>
+          <div class="footer-link">
+            <span class="footer-title">About</span>
+            <hr class="footer-divider" align=left>
+            <span class="footer-content">What is Digital Espresso?<br>Vision and Mission<br>Meet the Team</span>
+          </div>
+          <div class="footer-link">
+            <span class="footer-title">Shop</span>
+            <hr class="footer-divider" align=left>
+            <span class="footer-content">Products</span>
+          </div>
+          <div class="footer-link">
+            <span class="footer-title">Contact</span>
+            <hr class="footer-divider" align=left>
+            <span class="footer-content">Careers<br>Contact Us</span>
+          </div>
+        </div>
+        <div class="footer-end">
+          <div class="footer-left">
+            <img class="footer-logo" src="footer-logo.svg">
+            <span class="footer-name">Digital Espresso, Inc.</span>
+          </div>
+          <div class="footer-right">
+            <span class="footer-copyright">© 2021 Digital Espresso, Inc. All Rights Reserved.</span>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
